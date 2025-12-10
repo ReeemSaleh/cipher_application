@@ -209,7 +209,7 @@ public class cipher_application extends javax.swing.JFrame{
     public static Font lasticaFont(int size){
         Font lasticaFont;
         try {
-            lasticaFont = Font.createFont(Font.TRUETYPE_FONT, new File(System.getProperty("user.dir") + "/cipher_application/assets/fontsfree-net-lastica.ttf")).deriveFont(Font.BOLD, size);
+            lasticaFont = Font.createFont(Font.TRUETYPE_FONT, new File( "../cipher_application/assets/fontsfree-net-lastica.ttf")).deriveFont(Font.BOLD, size);
             GraphicsEnvironment.getLocalGraphicsEnvironment().registerFont(lasticaFont);
             return lasticaFont;
         } catch (IOException | FontFormatException e) {
